@@ -4,10 +4,7 @@
         <title>Energy assault commands</title>
     </head>
     <body>
-      <p>Tp Cmds</p>
-      <p>Kill Cmds</p>
-      <p>Server Lock Cmds</p>
-      <p>Team Cmds</p>
+      <p>Teleport Commands</p>
       
       <button onclick="L_to_me()">Levi to me</button>
       <input type="text" value=";tp MegaLevi13 Phoenix_tracker" id="levi2me">
@@ -16,8 +13,9 @@
       <input type="text" value=";tp Unicorn_unknown2012 Phoenix_tracker" id="carson2me">
       
       <button onclick="Olver_to_me()">Oliver to me</button>
-      <input type="text" value=";tp ShandraH1234 Phoenix_tracker" id="oliver2me">
+      <input type="text" value=";tp ShandraH1234 Phoenix_tracker" id="oliver2me"><br>
       
+      <p>Kill Commands</p>
       <button onclick="killcarson()">Kill Carson</button>
       <input type="text" value=";kill Unicorn_unknown2012" id="killcarson">
       
@@ -25,78 +23,82 @@
       <input type="text" value=";kill MegaLevi13" id="killlevi">
       
       <button onclick="killoliver()">Kill Oliver</button>
-      <input type="text" value=";kill ShandraH1234" id="killoliver">
+      <input type="text" value=";kill ShandraH1234" id="killoliver"><br>
+      
+      <p>Team Commands</p>
       
       <button onclick="L_to_blue()">Levi to Blue Team</button>
       <input type="text" value=";team MegaLevi13 blue" id="levi2blue">
+      
       <button onclick="L_to_red()">Levi to Red Team</button>
       <input type="text" value=";team MegaLevi13 red" id="levi2red">
       
       <button onclick="C_to_blue()">Carson to Blue Team</button>
       <input type="text" value=";team Unicorn_unknown2012 blue" id="carson2blue">
+      
       <button onclick="C_to_red()">Carson to Red Team</button>
       <input type="text" value=";team Unicorn_unknown2012 red" id="carson2red">
       
         <script>
           function killoliver() { // Get the text field
-  var copyText5 = document.getElementById("killoliver");
+          var copyText5 = document.getElementById("killoliver");
 
-  // Select the text field
-  copyText5.select();
-  copyText5.setSelectionRange(0, 99999); // For mobile devices
+          // Select the text field
+          copyText5.select();
+          copyText5.setSelectionRange(0, 99999); // For mobile devices
 
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText5.value);
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText5.value);
         }
           function killlevi() { // Get the text field
-  var copyText4 = document.getElementById("killlevi");
+          var copyText4 = document.getElementById("killlevi");
 
-  // Select the text field
-  copyText4.select();
-  copyText4.setSelectionRange(0, 99999); // For mobile devices
+          // Select the text field
+          copyText4.select();
+                  copyText4.setSelectionRange(0, 99999); // For mobile devices
 
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText4.value);
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText4.value);
         }
           function killcarson() { // Get the text field
-  var copyText3 = document.getElementById("killcarson");
+          var copyText3 = document.getElementById("killcarson");
 
-  // Select the text field
-  copyText3.select();
-  copyText3.setSelectionRange(0, 99999); // For mobile devices
+          // Select the text field
+          copyText3.select();
+          copyText3.setSelectionRange(0, 99999); // For mobile devices
 
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText3.value);
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText3.value);
         }
           function Olver_to_me() { // Get the text field
-  var copyText2 = document.getElementById("oliver2me");
+          var copyText2 = document.getElementById("oliver2me");
 
-  // Select the text field
-  copyText2.select();
-  copyText2.setSelectionRange(0, 99999); // For mobile devices
+          // Select the text field
+          copyText2.select();
+          copyText2.setSelectionRange(0, 99999); // For mobile devices
 
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText2.value);
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText2.value);
         }
           function C_to_me() { // Get the text field
-  var copyText1 = document.getElementById("carson2me");
+          var copyText1 = document.getElementById("carson2me");
 
-  // Select the text field
-  copyText1.select();
-  copyText1.setSelectionRange(0, 99999); // For mobile devices
+          // Select the text field
+          copyText1.select();
+          copyText1.setSelectionRange(0, 99999); // For mobile devices
 
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText1.value);
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText1.value);
         }
           function L_to_me() { // Get the text field
-  var copyText = document.getElementById("levi2me");
+          var copyText = document.getElementById("levi2me");
 
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
 
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);
         }
         </script>
   </body>
